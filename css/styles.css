@@ -20,24 +20,44 @@ body {
   box-sizing: inherit;
 }
 
-/* End basic Styles */
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
+/* End basic Styles */
 
-p {
-  color: purple;
+/* Begin Hero Styles */
+.hero-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  width: 100%;
 }
 
-.myColor {
-  color: red;
-  font-size: 56px;
+.hero-image-box {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
-.myColorTwo {
-  color: blue;
-  font-size: 87px;
-  font-weight: bold;
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.hero-text-box {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-self: center;
+  z-index: 10;
+  text-align: center;
 }
