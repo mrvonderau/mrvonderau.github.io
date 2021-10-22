@@ -51,12 +51,13 @@ img {
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .hero-image-box::after {
   content: "";
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: absolute;
   top: 0;
