@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Amazing Portfolio Duh</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css">
   </head>
   <body>
     <header class="hero-box">
@@ -22,10 +23,13 @@
       </section>
     </header>
     <!-- Begin Portfolio Gallery -->
-    <section class="portfolio-gallery">
+    <section class="portfolio-container">
       <h1>Portfolio</h1>
+    </section>
+    <section class="portfolio-gallery">
+      
       <div class="gallery-item">
-        <a class="glightbox" href="img/cityimage2.JPG">
+        <a class="glightbox" href="img/cityimage2.JPG" data-glightbox="title: Uptown Cleveland; description: view of the city">
           <img
             class="gallery-img"
             src="img/cityimage2.JPG"
@@ -33,7 +37,7 @@
         /></a>
       </div>
       <div class="gallery-item">
-        <a class="glightbox" href="img/cityimage3.JPG">
+        <a class="glightbox" href="img/cityimage3.JPG" data-glightbox="title: Uptown Cleveland; description: view from my apartment">
           <img
             class="gallery-img"
             src="img/cityimage3.JPG"
@@ -41,28 +45,28 @@
         /></a>
       </div>
       <div class="gallery-item">
-        <a class="glightbox" href="img/cityimage4.JPG">
+        <a class="glightbox" href="img/cityimage4.JPG" data-glightbox="title: Uptown Cleveland; description: view of houses">
           <img
             class="gallery-img"
             src="img/cityimage4.JPG"
             alt="image of Cleveland"
         /></a>
       </div> <div class="gallery-item">
-        <a class="glightbox" href="img/cityimage5.JPG">
+        <a class="glightbox" href="img/cityimage5.JPG" data-glightbox="title: Uptown Cleveland; description: view of houses">
           <img
             class="gallery-img"
             src="img/cityimage5.JPG"
             alt="Image of the city"
         /></a>
       </div> <div class="gallery-item">
-        <a class="glightbox" href="img/crystals 1.JPG">
+        <a class="glightbox" href="img/crystals 1.JPG" data-glightbox="title: Desktop Crystals; description: crystals and jewelry">
           <img
             class="gallery-img"
             src="img/crystals 1.JPG"
             alt="image of crystals and jewelry"
         /></a>
       </div> <div class="gallery-item">
-        <a class="glightbox" href="img/beddingimage.JPG">
+        <a class="glightbox" href="img/beddingimage.JPG" data-glightbox="title: Bedding; description: view of my bed">
           <img
             class="gallery-img"
             src="img/beddingimage.JPG"
@@ -77,9 +81,12 @@
         /></a>
       </div>
     </section>
+   </section>
+   <script src="js/glightbox.min.js"></script>
+   <script type="text/javascript">
+  const lightbox = GLightbox({ loop: true});
+  </script>
   </body>
 </html>
 
-    </section>
-  </body>
-</html>
+ 
