@@ -151,9 +151,14 @@ img {
   justify-content: start;
 }
 
-.about-social {
+.about-social a {
   color: black;
   padding: 0 1rem 1rem 1rem;
+  font-size: 2rem;
+}
+
+.about-social a:hover {
+  color: fuchsia;
 }
 .about-image img {
   height: 100%;
@@ -188,6 +193,9 @@ img {
     font-size: 1.2rem;
     line-height: 1.6rem;
   }
+  .about-social a {
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 920px) {
@@ -217,5 +225,8 @@ img {
   .about-text p {
     font-size: 1.8rem;
     line-height: 2.1rem;
+  }
+  .about-social a {
+    font-size: 4rem;
   }
 }
